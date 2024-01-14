@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+
+import StartGame from "./screens/StartGame";
+import MainGame from "./screens/MainGame";
+import GameOver from "./screens/GameOver";
+import PrimaryBtn from "./components/PrimaryBtn";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <StartGame />
+      <PrimaryBtn primarybtntext={"Confirm"} />
+      <PrimaryBtn primarybtntext={"Reset"} />
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const styles = StyleSheet.create({});
